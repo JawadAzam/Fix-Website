@@ -1,0 +1,159 @@
+<html>
+<head>
+<title> Repair Request   </title>
+<link rel="stylesheet" type="text/css" href="RR.css">
+<style>
+
+.myButton{
+left: 190px;
+position: relative; 
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<h1 class="header">Repair Request</h1>
+<br><br>
+<!--------------------------------------------------------------------------------->  
+ <form action="repairequest.php" method="POST" align=center>
+ <div id="PI">
+ 
+    <h2 class="H"> Phone Information  </h2>
+	<br><br>
+        <label class="firstlabel">Choose Phone Type :</label>
+            <select class="option" name="PhoneType" id="PhoneType" required>
+      <option>Apple</option>
+      <option>Samsung</option>
+      <option>Blackberry</option>
+      <option>Google</option>
+      <option>Huawei</option>
+      <option>I-mate</option>
+	  <option>Lenovo</option>
+	  <option>LG</option>
+	  <option>Nokia</option>
+	  <option>Sony</option>
+            </select>
+<br><br>   
+        <label class="secondlabel">Choose Phone Service :</label>
+            <select class="option" name="PhoneService" id="PhoneService" required>
+      <option>Repairs & Physical Damage</option>
+      <option>Battery & Charging</option>
+      <option>Device Performance</option>
+      <option>Apps & Feature</option>
+	  <option>Up-date, Backup & Restore</option>
+	  <option>Connectivity</option>
+            </select>
+<br><br>  
+   
+   
+    <label>Description : </label>
+<br><br>
+    <textarea name="Description" id="Description" class="input2" rows="5" cols="50" placeholder="We prefer if you can spicify
+	your problem in more details" required></textarea>
+   </div>
+   <br><br>
+   <div id="AI">
+<!--------------------------------------------------------------------------------->   
+   <h2 class="H">Address Information</h2>
+   <br><br>
+   <label>Full Name:</label>
+   <input type="text" class="input" name="FullName" id="FullName" required>
+<br><br>   
+    <label>Mobile Number : </label>
+    
+     <select class="option" name="KeyPhone" id="KeyPhone" required>
+      <option>971</option>
+      <option>963</option>
+      <option>966</option>
+      <option>964</option>
+      <option>962</option>
+      <option>961</option>
+     </select>
+     <input type="phone" class="input" name="PhoneNumber" id="PhoneNumber" required>
+<br><br>    
+   <label>Street Name:</label>
+   <input type="text" placeholder="e.g. Jabal Al Dannah" class="input" name="StreetName" id="StreetName" required>
+   
+   
+<br><br>   
+   <label style="font-size: 16px;">Building Name/no.,floor, apartment or villa number:</label>
+   <input type="text" name="Num" id="Num" placeholder="e.g. Shining Towers, 7th floor, Apt 723" class="input3" required>
+  
+   
+<br><br>   
+   <label>City:</label>
+   <input type="text" class="input" name="City" id="City" required>
+   
+   
+<br><br> 
+
+
+   <label> Address Type :</label>
+    <label class="radio">
+     <input type="radio" class="radio-one" checked="checked" name="AddressType" id="AddressType" value="Home" required>  
+	 <span class="checkmark"></span>
+	 Home
+	 </label>
+	 <label class="radio">
+     <input type="radio" class="radio-two" name="AddressType" id="AddressType" value="Office" required>  
+	 <span class="checkmark"></span>
+	 Office
+	 </label>
+	 
+ 
+ </div>
+<br><br> 
+<!--------------------------------------------------------------------------------->  
+<h2 class="H">Payment Method</h2>  
+
+	   
+<br><br>	   
+  <label> Card Number:</label>
+   <input type="text" class="input" name="CardNumber" id="CardNumber" required>
+   
+	   
+<br><br>	
+  <label> Name on card:</label>
+   <input type="text" class="input" name="CardName" id="CardName" required>
+    
+	 
+<br><br>	 
+  <label> Expiration Date:</label>
+   <select class="option" name="ExpirationMonth" required>
+      <option>01</option>
+      <option>02</option>
+      <option>03</option>
+      <option>04</option>
+      <option>05</option>
+      <option>06</option>
+	  <option>07</option>
+	  <option>08</option>
+	  <option>09</option>
+	  <option>10</option>
+	  <option>11</option>
+	  <option>12</option>
+     </select>
+	 
+	 <select class="option" name="ExpirationYear" required>
+      <option>2020</option>
+      <option>2021</option>
+      <option>2022</option>
+      <option>2023</option>
+      <option>2024</option>
+      <option>2025</option>
+	  <option>2026</option>
+	  <option>2027</option>
+	  <option>2028</option>
+	  <option>2029</option>
+	  <option>2030</option>
+	  <option>2031</option>
+     </select>
+	  
+
+<br><br>
+  <button type="submit" name="submit" id="submit" value="submit" class="myButton">Submit your request</button>
+ </form>
+ </div>
+</body>
+</html>

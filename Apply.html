@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>Apply now</title>
+     <meta charset="utf-8"/>
+  </head>  
+     <style>
+        fieldset{
+            border: 1px solid;
+            width: 400px;
+            margin:auto;
+        }
+<div class="powr-order-form" id="3e903adc_1610716840"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+    </style>
+
+    <h4 align="center">Create An Account For Our Site</h4>
+
+    <form role="form" action="registerData.php" method="post" align="center">
+        <fieldset>
+            <legend>Enter The Required Information</legend>
+            <br>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName"  required>
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName"  required >
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password"  name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">  
+            <br><br>
+
+            <label for="email">Email address:</label>
+            <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Example: john@gmail.com"
+                   <br><br><br>
+
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="text"  name="phoneNumber" pattern="\d{3}\d{3}\d{4}" required title="Example: 0501234567">
+            <br><br>
+
+                   
+
+            <label>Choose Your Plan :</label>
+
+            <input type="radio" name="optradio1" value="Basic" required>   Basic
+
+
+            <input type="radio" name="optradio1" value="Standard" required>   Standard
+
+
+            <input type="radio" name="optradio1" value="Premium" required>   Premium
+
+            <br><br>
+
+            <button type="submit" name="submit" class="center">Submit</button>
+
+            <br><br>
+            <p class="loginhere">
+                Have already an account ? <a href="loginPage.php">Login here</a>
+            </p>
+        </fieldset> 
+    </form>
+
+</body>
+
+</html>
